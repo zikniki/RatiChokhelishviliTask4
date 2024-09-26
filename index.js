@@ -140,3 +140,5 @@ for (let i = 0; i < cities.length; i++) {
         console.log(property + ": " + value);
     }
 }
+
+console.log("secondPart");
