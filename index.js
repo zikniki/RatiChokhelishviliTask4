@@ -141,4 +141,27 @@ for (let i = 0; i < cities.length; i++) {
     }
 }
 
-console.log("secondPart");
+console.log("-------------------");
+
+weatherData.Tbilisi.temperature.current = 27;
+weatherData.Tbilisi.pollutionLevel = "Moderate";
+weatherData.Batumi["pollutionLevel"] = "High";
+
+const updataCities = Object.keys(weatherData);
+for (let i = 0; i < updataCities.length; i++) {
+    const cityKey = cities[i];
+    const city = weatherData[cityKey];
+    const properties = Object.keys(city);
+
+    console.log(properties)
+    for (let j = 0; j < properties.length; j++) {
+        const property = properties[j];
+        const value = city[property];
+        console.log(property + ": " + value);
+    }
+}
+console.log("-------------------");
+
+
+console.log(`High temperature for Batumi: ${weatherData.Batumi.temperature.high}`);
+console.log(`Evening conditions for Tbilisi: ${weatherData.Tbilisi.forecast.evening.conditions}`);
