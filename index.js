@@ -164,4 +164,4 @@ console.log("-------------------");
 
 
 console.log(`High temperature for Batumi: ${weatherData.Batumi.temperature.high}`);
-console.log(`Evening conditions for Tbilisi: ${weatherData.Tbilisi.forecast.evening.conditions}`);
+console.log(`Evening conditions for Tbilisi: ${weatherData.Tbilisi.forecast.evening.conditions}`);               
